@@ -18,7 +18,7 @@ openclaw-full:
             dropped from the metalayer. The gateway's own port reachability is
             already checked by the composed openclaw candy and rides along.
         candy:
-            - '@github.com/opencharly/pod-openclaw:v2026.246.1617'
+            - '@github.com/opencharly/pod-openclaw:v2026.246.2119'
             - '@github.com/opencharly/layer-claude-code:v2026.239.1626'
             - '@github.com/opencharly/layer-codex:v2026.243.0408'
             - '@github.com/opencharly/layer-gemini:v2026.243.0409'
