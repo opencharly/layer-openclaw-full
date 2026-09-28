@@ -1,7 +1,5 @@
-version: 2026.232.0520
 openclaw-full:
     candy:
-        version: 2026.246.0300
         description: |
             Maximal headless OpenClaw deployment (OpenClaw 2.0 gateway, npm openclaw@2026.8.x) — gateway plus all feasible CLI tools/skills, no system Chrome/CDP
             openclaw-full is a pure meta-composition candy: it installs nothing of
