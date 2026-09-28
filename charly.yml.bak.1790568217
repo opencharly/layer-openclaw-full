@@ -1,5 +1,7 @@
+version: 2026.232.0520
 openclaw-full:
     candy:
+        version: 2026.246.0300
         description: |
             Maximal headless OpenClaw deployment (OpenClaw 2.0 gateway, npm openclaw@2026.8.x) — gateway plus all feasible CLI tools/skills, no system Chrome/CDP
             openclaw-full is a pure meta-composition candy: it installs nothing of
@@ -17,7 +19,7 @@ openclaw-full:
             already checked by the composed openclaw candy and rides along.
         candy:
             - '@github.com/opencharly/pod-openclaw:v2026.246.2119'
-            - '@github.com/opencharly/layer-claude-code:v2026.270.0831'
+            - '@github.com/opencharly/layer-claude-code:v2026.239.1626'
             - '@github.com/opencharly/layer-codex:v2026.243.0408'
             - '@github.com/opencharly/layer-gemini:v2026.243.0409'
             - '@github.com/opencharly/layer-clawhub:v2026.243.0408'
@@ -25,7 +27,7 @@ openclaw-full:
             - '@github.com/opencharly/layer-oracle:v2026.243.0409'
             - '@github.com/opencharly/layer-xurl:v2026.243.0508'
             - '@github.com/opencharly/layer-summarize:v2026.243.0410'
-            - '@github.com/opencharly/layer-playwright:v2026.239.1637'
+            - '@github.com/opencharly/layer-playwright:v2026.237.557'
             - '@github.com/opencharly/layer-blogwatcher:v2026.243.0408'
             - '@github.com/opencharly/layer-gifgrep:v2026.243.0409'
             - '@github.com/opencharly/layer-wacli:v2026.243.0410'
@@ -39,7 +41,7 @@ openclaw-full:
             - '@github.com/opencharly/layer-uv:v2026.239.1631'
             - '@github.com/opencharly/layer-nano-pdf:v2026.243.0706'
             - '@github.com/opencharly/layer-gh:v2026.239.1624'
-            - '@github.com/opencharly/layer-tmux:v2026.240.0202'
+            - '@github.com/opencharly/layer-tmux:v2026.235.2057'
             - '@github.com/opencharly/layer-ffmpeg:v2026.239.1614'
             - '@github.com/opencharly/layer-ripgrep:v2026.235.1653'
             - '@github.com/opencharly/layer-sqlite:v2026.239.1638'
@@ -97,6 +99,7 @@ openclaw-full:
               file:
                 file: /usr/local/bin/uvx
                 exists: true
+
 openclaw-full-skill:
     skill:
         name: openclaw-full
@@ -107,11 +110,11 @@ openclaw-full-skill:
             MUST be invoked before building, deploying, or troubleshooting the openclaw-full box.
         content: |-
             # openclaw-full
-
+            
             Headless OpenClaw box with maximal tool/skill coverage. No desktop, no VNC.
-
+            
             ## Box Properties
-
+            
             | Property | Value |
             |----------|-------|
             | Base | cachyos |
@@ -119,43 +122,43 @@ openclaw-full-skill:
             | Platforms | linux/amd64 |
             | Ports | 18789 (gateway) |
             | Registry | ghcr.io/opencharly |
-
+            
             ## Full Candy Stack
-
+            
             1. `cachyos` (external base, Arch-derived — pacman/AUR)
             2. `openclaw-full` metalayer (no system browser):
                - `openclaw` — AI gateway
                - `claude-code` — Claude Code CLI
                - the tool candies (codex, gemini, clawhub, mcporter, oracle, xurl, summarize, playwright, blogwatcher, gifgrep, wacli, goplaces, songsee, sag, camsnap, gogcli, ordercli, himalaya, uv, nano-pdf, gh, tmux, ffmpeg, ripgrep, sqlite)
-
+            
             ## Ports
-
+            
             | Port | Service | Protocol |
             |------|---------|----------|
             | 18789 | OpenClaw gateway | HTTP |
-
+            
             ## Quick Start
-
+            
             ```bash
             charly box build openclaw-full
             charly config openclaw-full
             charly start openclaw-full
             ```
-
+            
             ## Key Candies
-
+            
             - `/charly-openclaw:openclaw-full` — Metalayer composition (all tools)
             - `/charly-openclaw:openclaw` — AI gateway service
-
+            
             ## Related Boxes
-
+            
             - `/charly-openclaw:openclaw` — minimal (gateway only)
-
+            
             ## When to Use This Skill
-
+            
             **MUST be invoked** when the task involves the openclaw-full box or the headless maximal OpenClaw deployment.
-
+            
             ## Related
-
+            
             - `/charly-image:image` — image family umbrella (`candy:` image entries — those carrying `base:`/`from:` — in `charly.yml`, build/validate/inspect/list)
             - `/charly-build:build` — the embedded build vocabulary (distros, builders, init-systems)
