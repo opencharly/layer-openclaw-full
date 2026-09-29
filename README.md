@@ -32,7 +32,6 @@ exactly this:
 ```yaml
 openclaw-full:
   candy:
-    # the named box's value is the box BODY; `base:` and the `candy:` list are its keys
     base: cachyos
     candy:
       - agent-forwarding
@@ -50,7 +49,7 @@ charly start openclaw-full
 ## Layout
 
 - `charly.yml` — the `openclaw-full:` candy entity (the composed `candy:` list
-  and the cross-section `plan:` checks) plus the embedded `skill:` entity.
+  and the cross-section `plan:` checks) plus the embedded `skill:` entity (the `openclaw-full-skill:` node).
 - `CHANGELOG/` — per-CalVer release history.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — this user overview.

@@ -9,7 +9,7 @@ projected into the marketplace corpus as `/charly-openclaw:openclaw-full`.
 Canonical files:
 
 - `charly.yml` — the `openclaw-full:` candy entity and the
-  `openclaw-full-skill:` skill entity.
+  `openclaw-full-skill:` `skill:` entity.
 - `CHANGELOG/` — per-CalVer release history.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — user overview only; never agent guidance.
