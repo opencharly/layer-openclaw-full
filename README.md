@@ -32,6 +32,7 @@ exactly this:
 ```yaml
 openclaw-full:
   candy:
+    # the named box's value is the box BODY; `base:` and the `candy:` list are its keys
     base: cachyos
     candy:
       - agent-forwarding
