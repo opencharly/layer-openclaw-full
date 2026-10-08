@@ -2,7 +2,7 @@
 #
 #  This repo's entities were the `openclaw-full:` metalayer (the OpenClaw gateway
 #  plus ~26 headless CLI tool layers) and its `openclaw-full-skill:` skill. The
-#  OpenClaw family was consolidated into opencharly/openclaw
+#  OpenClaw family was consolidated into opencharly/layer-openclaw
 #  (opencharly/opencharly#431) and the variant metalayers were DROPPED rather than
 #  moved: the family ships the gateway image and its layer, and no `-full`,
 #  `-desktop` or `-ml` variant returns.

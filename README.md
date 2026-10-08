@@ -4,7 +4,7 @@ This repo is retired. Its entities were the `openclaw-full` metalayer — the
 OpenClaw gateway plus every feasible headless CLI tool — and the
 `/charly-openclaw:openclaw-full` skill that documented it. That variant was
 **dropped**, not moved, when the OpenClaw family was consolidated into
-[`opencharly/openclaw`](https://github.com/opencharly/openclaw): the family ships
+[`opencharly/layer-openclaw`](https://github.com/opencharly/layer-openclaw): the family ships
 the gateway image and its layer, and no `-full`, `-desktop` or `-ml` successor
 returns.
 
